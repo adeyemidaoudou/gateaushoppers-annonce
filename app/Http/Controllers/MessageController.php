@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Message;
+use App\Newsletter;
 use Illuminate\Http\Request;
 
 class MessageController extends Controller
@@ -19,6 +20,20 @@ class MessageController extends Controller
       if(  $message->save())
         return redirect()->route('remerciement');
 
+    }
+
+    public function newsletter(Request $request){
+        $newsletter = new Newsletter();
+        $newsletter->email = $request->email;
+        $newsletter->save();
+        return redirect()->route('remerciement_newsletter');
+
+    }
+
+    public function getNewsletter(){
+        $newsletters = Newsletter::all();
+
+        return view('admin.newsletter', ['newsletters'=>$newsletters]);
     }
 
 

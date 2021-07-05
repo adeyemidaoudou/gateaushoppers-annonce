@@ -52,7 +52,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Gateau Shoppers Admin</a>
+            <a class="navbar-brand" href="{{route('accueil.index')}}">Gateau Shoppers Admin</a>
         </div>
         <!-- /.navbar-header -->
 
@@ -183,6 +183,9 @@
                     </li>
                     <li>
                         <a href="{{route('accueil.messages',1)}}"><i class="fa fa-table fa-fw"></i> Messages</a>
+                    </li>
+                    <li>
+                        <a href="{{route('newsletter')}}"><i class="fa fa-table fa-fw"></i> Newsletter</a>
                     </li>
                 </ul>
             </div>

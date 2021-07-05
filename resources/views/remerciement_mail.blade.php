@@ -41,7 +41,7 @@
         <img class="d-block mx-auto mb-4" src="{{asset('img/logo_rond.png')}}" alt="" width="72" height="57">
         <h1 class="display-5 fw-bold">Gateaushoppers</h1>
         <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Nous avons reçu votre message! Nous vous répondront dès que possible. Merci pour l'intérêt que
+            <p class="lead mb-4">Nous vous tiendrons informé de toute l'actualité sur gateaushoppers. Merci pour l'intérêt que
                 vous portez à gateaushoppers. Portez-vous bien! </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
 

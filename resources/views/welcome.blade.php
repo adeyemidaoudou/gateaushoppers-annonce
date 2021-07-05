@@ -83,11 +83,12 @@
         <p class="h3 mb-4 text-shadow font-weight-normal">Ne manquez rien sur le lancement de gateaushoppers!</p>
         <div class="row">
             <div class="col-lg-5 mx-auto">
-                <form class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+                <form action="{{route('newsletter')}}" method="post" class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+                    @csrf
                     <div class="input-group shadow">
-                        <input id="inlineFormInputName2" type="email" placeholder="Entrez votre adresse mail" class="form-control">
+                        <input id="inlineFormInputName2" type="email" name="email" required placeholder="Entrez votre adresse mail" class="form-control">
                         <div class="input-group-append">
-                            <button type="submit" class="btn btn-primary mb-2">Souscrire</button>
+                            <button type="submit" class="btn btn-primary mb-2">Me tenir informé</button>
                         </div>
                     </div>
                 </form>
@@ -100,9 +101,8 @@
                 <div class="col-lg-6 text-center text-lg-left">
 
                     <p class="text-small mb-1">©2021
-                        <a href="https://gateaushoppers.com" class="text-white" style="margin-right: 20px">Gateaushoppers</a>
-                        <a href="https://huyhoa.net" class="text-white" style="margin-right: 20px">Contacts</a>
-                        <a href="https://huyhoa.net" class="text-white" style="margin-right: 20px">Plus d'infos</a>
+                        <a href="{{url('/')}}" class="text-white" style="margin-right: 20px">Gateaushoppers</a>
+                        <a href="{{route('contact')}}" class="text-white" style="margin-right: 20px">Contacts</a>
                     </p>
 
                 </div>
@@ -123,8 +123,8 @@
     config = {
         countdown: {
             year: 2021,
-            month: 7,
-            day: 25,
+            month: 8,
+            day: 8,
             hour: 18,
             minute: 00,
             second: 00

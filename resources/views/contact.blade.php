@@ -76,14 +76,14 @@
             </div>
             <div class="col-md-7 col-lg-8">
                 <p class="lead">Vous possédez une patisserie et vous souhaitez proposer vos services sur gateaushoppers,
-                nous serons ravi de collaborer avec vous! Ecrivez nous en remplissant le formulaire ci-dessous!
+                nous serons ravis de collaborer avec vous! Ecrivez nous en remplissant le formulaire ci-dessous!
                 </p>
                 <form class="needs-validation" action="{{route('contact.patisseries')}}" method="post" novalidate>
                     @csrf
                     <div class="row g-3">
                         <div class="col-sm-6">
                             <label for="firstName" class="form-label">Votre nom</label>
-                            <input type="text" class="form-control" id="name" placeholder="votre nom" name="name" required>
+                            <input type="text" class="form-control" id="name" placeholder="Votre nom" name="name" required>
                             <input type="text" class="form-control"  hidden name="subject_id" value="1" required>
 
                             <div class="invalid-feedback">
@@ -108,12 +108,9 @@
                                 </div>
                             </div>
                         </div>
-
                         <button class="ml-3 mt-2 btn btn-primary" type="submit">Envoyer</button>
-
                     </div>
                     <hr class="my-4">
-
                 </form>
 
                 <p class="lead">Vous êtes un visiteur. Vous voulez tester la version bêta du site lorsqu'elle
@@ -126,12 +123,10 @@
                             <label for="firstName" class="form-label">Votre nom</label>
                             <input type="text" class="form-control" id="name" placeholder="votre nom" name="name" required>
                             <input type="text" class="form-control"  hidden name="subject_id" value="2" required>
-
                             <div class="invalid-feedback">
                                 Vous avez oublié de préciser votre nom!
                             </div>
                         </div>
-
                         <div class="col-sm-6">
                             <label for="lastName" class="form-label">Votre email</label>
                             <input type="email" class="form-control" id="email" placeholder="Votre email" name="email" required>
@@ -139,7 +134,6 @@
                                 Vous avez oublié de préciser votre adresse mail.
                             </div>
                         </div>
-
                         <div class="col-12">
                             <label for="username" class="form-label">Votre message</label>
                             <div class="input-group">

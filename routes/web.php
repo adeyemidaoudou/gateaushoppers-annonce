@@ -28,6 +28,7 @@ Route::get('/home', 'HomeController@index')
 Route::get('/contact', 'ContactController@index')->name('contact');
 
 Route::get('/remerciement', 'RemerciementController@index')->name('remerciement'); //
+Route::get('/remerciement_newsletter', 'RemerciementController@index2')->name('remerciement_newsletter'); //
 
 
 
@@ -49,5 +50,9 @@ Route::get('/locations/{page}/date/{date}', 'AdminController@users_ip')->name('l
 
 //lien des formulaires
 Route::get('/message/{id}', 'AdminController@show')->name('message');
+
+//newsletter
+Route::post('/newsletter', 'MessageController@newsletter')->name('newsletter');
+Route::get('/newsletter', 'MessageController@getNewsletter')->name('newsletter');
 
 
